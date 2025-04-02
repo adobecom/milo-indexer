@@ -1,12 +1,12 @@
-name: AIO App CI Stage
+name: AIO App CI Dev
 
 on:
   push:
     branches:
-      - stage
+      - develop
 jobs:
   deploy:
-    name: Deploy to Stage
+    name: Deploy to Dev
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
